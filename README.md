@@ -7,7 +7,7 @@
 * @param context 建议用ApplicationContext
 */
 
-public void httpGet(Context context,String url, HttpCallBack httpCallBack) 
+public void httpGet(Context context,String url, HttpCallBack httpCallBack) {}
 
 /**
 * Post Json 请求
@@ -17,7 +17,7 @@ public void httpGet(Context context,String url, HttpCallBack httpCallBack)
 * @param context 建议用ApplicationContext
 */
 
-public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, Object object) 
+public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, Object object) {}
 
 /**
 * Post Form表单 请求
@@ -28,7 +28,7 @@ public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, 
 * @param context 建议用ApplicationContext
 */
 
-public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Object object) 
+public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Object object) {}
 
 /**
 * Post Form表单 请求
@@ -39,7 +39,7 @@ public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, 
 * @param context 建议用ApplicationContext
 */
 
-public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Map<String, String> params) 
+public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Map<String, String> params) {}
 
 /**
 * 文件上传 请求
@@ -50,7 +50,7 @@ public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, 
 * @param context 建议用ApplicationContext
 */
 
-public void uploadFile(Context context,String url, HttpCallBack httpCallBack,  Map<String, String> params,File...files )
+public void uploadFile(Context context,String url, HttpCallBack httpCallBack,  Map<String, String> params,File...files ){}
 
 2.工程的导入
 
