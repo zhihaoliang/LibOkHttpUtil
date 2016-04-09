@@ -27,14 +27,21 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.2'
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'om.zhihaoliang.util.http'
+    PUBLISH_ARTIFACT_ID = 'libokhttp'
+    PUBLISH_VERSION = android.defaultConfig.versionName
+}
+
 uploadArchives{
     repositories.mavenDeployer{
         def deployPath = file(getProperty('aar.mavenLibOkHttp'))
         repository(url:"file://${deployPath.absolutePath}")
         pom.project{
-            groupId "com.zhihaoliang.util.http"
-            artifactId "libokhttp"
-            version "1.0"
+            groupId project.PUBLISH_GROUP_ID
+            artifactId project.PUBLISH_ARTIFACT_ID
+            version project.PUBLISH_VERSION
         }
+
     }
 }
