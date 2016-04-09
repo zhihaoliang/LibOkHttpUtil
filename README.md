@@ -1,39 +1,48 @@
 1.这是一个对OkHttp的整合包括的方法主要有：
 
-/**Get 请求
+/**
+* Get 请求
 * @param url          请求的地址
 * @param httpCallBack 请求的结果的处理
 * @param context 建议用ApplicationContext
 */
+
 public void httpGet(Context context,String url, HttpCallBack httpCallBack) 
 
-/**Post Json 请求
+/**
+* Post Json 请求
 * @param url          请求的地址
 * @param httpCallBack 请求的结果的处理
 * @param object       传递的Bean类
 * @param context 建议用ApplicationContext
 */
+
 public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, Object object) 
 
-/**Post Form表单 请求
+/**
+* Post Form表单 请求
 *
 * @param url          请求的地址
 * @param httpCallBack 请求的结果的处理
 * @param object       传递的Bean类
 * @param context 建议用ApplicationContext
 */
+
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Object object) 
 
-/**Post Form表单 请求
+/**
+* Post Form表单 请求
 *
 * @param url          请求的地址
 * @param httpCallBack 请求的结果的处理
 * @param params      传递的
 * @param context 建议用ApplicationContext
 */
+
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Map<String, String> params) 
 
-/**文件上传 请求
+/**
+* 文件上传 请求
 *
 * @param url          请求的地址
 * @param httpCallBack 请求的结果的处理
@@ -45,7 +54,7 @@ public void uploadFile(Context context,String url, HttpCallBack httpCallBack,  M
 
 2.工程的导入
 
-在工程中的build.gradle加入
+在工程中的build.gradle
 allprojects {
 repositories {
 jcenter()
@@ -68,7 +77,9 @@ import android.util.Log;
 
 import com.zhihaoliang.util.http.OkHttpClientUtil;
 
-/**Created by Administrator on 2016/4/7 0007.*/
+/**
+ * Created by Administrator on 2016/4/7 0007.
+ */
 public class MyOkHttpClientUtil extends OkHttpClientUtil {
 
     private static OkHttpClientUtil sInstance;
