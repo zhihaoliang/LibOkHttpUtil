@@ -1,11 +1,14 @@
 1.这是一个对OkHttp的整合包括的方法主要有：
+
 /**
 * Get 请求
 * @param url          请求的地址
 * @param httpCallBack 请求的结果的处理
 * @param context 建议用ApplicationContext
 */
+
 public void httpGet(Context context,String url, HttpCallBack httpCallBack) 
+
 /**
 * Post Json 请求
 * @param url          请求的地址
@@ -13,6 +16,7 @@ public void httpGet(Context context,String url, HttpCallBack httpCallBack)
 * @param object       传递的Bean类
 * @param context 建议用ApplicationContext
 */
+
 public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, Object object) 
 
 /**
@@ -23,6 +27,7 @@ public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, 
 * @param object       传递的Bean类
 * @param context 建议用ApplicationContext
 */
+
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Object object) 
 
 /**
@@ -33,6 +38,7 @@ public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, 
 * @param params      传递的
 * @param context 建议用ApplicationContext
 */
+
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Map<String, String> params) 
 
 /**
@@ -43,6 +49,7 @@ public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, 
 * @param files    要上传的的文件路径列表
 * @param context 建议用ApplicationContext
 */
+
 public void uploadFile(Context context,String url, HttpCallBack httpCallBack,  Map<String, String> params,File...files )
 
 2.工程的导入
