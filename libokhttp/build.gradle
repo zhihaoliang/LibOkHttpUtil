@@ -28,7 +28,7 @@ dependencies {
 }
 
 ext {
-    PUBLISH_GROUP_ID = 'om.zhihaoliang.util.http'
+    PUBLISH_GROUP_ID = 'com.zhihaoliang.util.http'
     PUBLISH_ARTIFACT_ID = 'libokhttp'
     PUBLISH_VERSION = android.defaultConfig.versionName
 }
