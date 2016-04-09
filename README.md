@@ -1,76 +1,76 @@
-1.ÕâÊÇÒ»¸ö¶ÔOkHttpµÄÕûºÏ°üÀ¨µÄ·½·¨Ö÷ÒªÓĞ£º
+1.è¿™æ˜¯ä¸€ä¸ªå¯¹OkHttpçš„æ•´åˆåŒ…æ‹¬çš„æ–¹æ³•ä¸»è¦æœ‰ï¼š
 
 /**
-* Get ÇëÇó
-* @param url          ÇëÇóµÄµØÖ·
-* @param httpCallBack ÇëÇóµÄ½á¹ûµÄ´¦Àí
-* @param context ½¨ÒéÓÃApplicationContext
+* Get è¯·æ±‚
+* @param url          è¯·æ±‚çš„åœ°å€
+* @param httpCallBack è¯·æ±‚çš„ç»“æœçš„å¤„ç†
+* @param context å»ºè®®ç”¨ApplicationContext
 */
 
 public void httpGet(Context context,String url, HttpCallBack httpCallBack) {}
 
 /**
-* Post Json ÇëÇó
-* @param url          ÇëÇóµÄµØÖ·
-* @param httpCallBack ÇëÇóµÄ½á¹ûµÄ´¦Àí
-* @param object       ´«µİµÄBeanÀà
-* @param context ½¨ÒéÓÃApplicationContext
+* Post Json è¯·æ±‚
+* @param url          è¯·æ±‚çš„åœ°å€
+* @param httpCallBack è¯·æ±‚çš„ç»“æœçš„å¤„ç†
+* @param object       ä¼ é€’çš„Beanç±»
+* @param context å»ºè®®ç”¨ApplicationContext
 */
 
 public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, Object object) {}
 
 /**
-* Post Form±íµ¥ ÇëÇó
+* Post Formè¡¨å• è¯·æ±‚
 *
-* @param url          ÇëÇóµÄµØÖ·
-* @param httpCallBack ÇëÇóµÄ½á¹ûµÄ´¦Àí
-* @param object       ´«µİµÄBeanÀà
-* @param context ½¨ÒéÓÃApplicationContext
+* @param url          è¯·æ±‚çš„åœ°å€
+* @param httpCallBack è¯·æ±‚çš„ç»“æœçš„å¤„ç†
+* @param object       ä¼ é€’çš„Beanç±»
+* @param context å»ºè®®ç”¨ApplicationContext
 */
 
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Object object) {}
 
 /**
-* Post Form±íµ¥ ÇëÇó
+* Post Formè¡¨å• è¯·æ±‚
 *
-* @param url          ÇëÇóµÄµØÖ·
-* @param httpCallBack ÇëÇóµÄ½á¹ûµÄ´¦Àí
-* @param params      ´«µİµÄ
-* @param context ½¨ÒéÓÃApplicationContext
+* @param url          è¯·æ±‚çš„åœ°å€
+* @param httpCallBack è¯·æ±‚çš„ç»“æœçš„å¤„ç†
+* @param params      ä¼ é€’çš„
+* @param context å»ºè®®ç”¨ApplicationContext
 */
 
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Map<String, String> params) {}
 
 /**
-* ÎÄ¼şÉÏ´« ÇëÇó
+* æ–‡ä»¶ä¸Šä¼  è¯·æ±‚
 *
-* @param url          ÇëÇóµÄµØÖ·
-* @param httpCallBack ÇëÇóµÄ½á¹ûµÄ´¦Àí
-* @param files    ÒªÉÏ´«µÄµÄÎÄ¼şÂ·¾¶ÁĞ±í
-* @param context ½¨ÒéÓÃApplicationContext
+* @param url          è¯·æ±‚çš„åœ°å€
+* @param httpCallBack è¯·æ±‚çš„ç»“æœçš„å¤„ç†
+* @param files    è¦ä¸Šä¼ çš„çš„æ–‡ä»¶è·¯å¾„åˆ—è¡¨
+* @param context å»ºè®®ç”¨ApplicationContext
 */
 
-public void uploadFile(Context context,String url, HttpCallBack httpCallBack,  Map<String, String> params,File...files ){}
+public void uploadFile(Context context,String url, HttpCallBack httpCallBack,  Map<String, String> params,File...files ){}}
 
-2.¹¤³ÌµÄµ¼Èë
+2.å·¥ç¨‹çš„å¯¼å…¥
 
-ÔÚ¹¤³ÌÖĞµÄbuild.gradle
+åœ¨å·¥ç¨‹ä¸­çš„build.gradle
 allprojects {
 repositories {
 jcenter()
 maven {
-	url "https://raw.githubusercontent.com/zhihaoliang/LibOkHttpUtil/master/libokhttp/repository"
+    url "https://raw.githubusercontent.com/zhihaoliang/LibOkHttpUtil/master/libokhttp/repository"
 }
 }
 
 }
 
-ÔÚappÖĞµÄbuild.gradle ¼ÓÈë
+åœ¨appä¸­çš„build.gradle åŠ å…¥
 compile 'com.zhihaoliang.util.http:libokhttp:1.0'
 
-3.Ê¹ÓÃ·½·¨
+3.ä½¿ç”¨æ–¹æ³•
 
-<1>ÊµÏÖOkHttpClientUtil
+<1>å®ç°OkHttpClientUtil
 package com.zhihaoliang.util.http.zokhttpsimple;
 
 import android.util.Log;
@@ -85,7 +85,7 @@ public class MyOkHttpClientUtil extends OkHttpClientUtil {
     private static OkHttpClientUtil sInstance;
 
     /**
-     * µ¥ÀıÄ£Ê½ÖĞµÄÀÁ¼ÓÔØ
+     * å•ä¾‹æ¨¡å¼ä¸­çš„æ‡’åŠ è½½
      */
     public static OkHttpClientUtil initInstance() {
         if (sInstance == null) {
@@ -100,7 +100,7 @@ public class MyOkHttpClientUtil extends OkHttpClientUtil {
     }
 
     /**
-     * ÊÇ·ñÊÇdebugÄ£Ê½£¬debugÄ£Ê½²»½øĞĞÁªÍøÖ±½Ó·µ»Ø³É¹¦
+     * æ˜¯å¦æ˜¯debugæ¨¡å¼ï¼Œdebugæ¨¡å¼ä¸è¿›è¡Œè”ç½‘ç›´æ¥è¿”å›æˆåŠŸ
      * @return
      */
     @Override
@@ -109,8 +109,8 @@ public class MyOkHttpClientUtil extends OkHttpClientUtil {
     }
 
     /**
-     * µ±¿ÉÒÔÁªÍøµ«ÊÇ·şÎñÆ÷Ã»·µ»ØµÄ´íÎó
-     * ·µ»ØÖµÔİÊ±Ã»ÓĞÓÃµ½
+     * å½“å¯ä»¥è”ç½‘ä½†æ˜¯æœåŠ¡å™¨æ²¡è¿”å›çš„é”™è¯¯
+     * è¿”å›å€¼æš‚æ—¶æ²¡æœ‰ç”¨åˆ°
      */
     @Override
     public boolean onDeError() {
@@ -118,7 +118,7 @@ public class MyOkHttpClientUtil extends OkHttpClientUtil {
     }
 
     /**
-     * ¶ÔurlµÄ´¦Àí£¬±ÈÈç¼ÓÉÏ·şÎñÆ÷µØÖ·
+     * å¯¹urlçš„å¤„ç†ï¼Œæ¯”å¦‚åŠ ä¸ŠæœåŠ¡å™¨åœ°å€
      */
     @Override
     public String getUrl(String url) {
@@ -126,7 +126,7 @@ public class MyOkHttpClientUtil extends OkHttpClientUtil {
     }
 
     /**
-     *¶Ô·µ»ØÖµµÄ´òÓ¡
+     *å¯¹è¿”å›å€¼çš„æ‰“å°
      */
     @Override
     public void doLog(String response) {
@@ -134,7 +134,7 @@ public class MyOkHttpClientUtil extends OkHttpClientUtil {
     }
 }
 
-<2>ÊµÏÖHttpCallBack
+<2>å®ç°HttpCallBack
 package com.zhihaoliang.util.http;
 
 import okhttp3.Call;
@@ -148,45 +148,43 @@ import okhttp3.Request;
  */
 public abstract class HttpCallBack {
     /**
-     * Èç¹û²»·ûºÏÁªÍøÌõ¼ş
+     * å¦‚æœä¸ç¬¦åˆè”ç½‘æ¡ä»¶
      */
     public abstract void onConnnectFaile(int state);
     /**
-     * ·ûºÏÁªÍøÌõ¼ş
+     * ç¬¦åˆè”ç½‘æ¡ä»¶
      */
     public abstract void onConnnectSucess();
 
     /**
-     * ÁªÍøÖ®Ç°µÄUI²Ù×÷
+     * è”ç½‘ä¹‹å‰çš„UIæ“ä½œ
      */
     public void onBefore(Request request) {
     }
 
     /**
-     * ÁªÍøÖ®ºóµÄ²Ù×÷
+     * è”ç½‘ä¹‹åçš„æ“ä½œ
      */
     public void onAfter() {
     }
 
     /**
-     * ÁªÍø´íÎóµÄ²Ù×÷
+     * è”ç½‘é”™è¯¯çš„æ“ä½œ
      * @param call
      * @param e
      */
     public abstract void onError(Call call, Exception e);
 
     /**
-     * ÁªÍø³É¹¦µÄ²Ù×÷
+     * è”ç½‘æˆåŠŸçš„æ“ä½œ
      * @param response
      */
     public abstract void onResponse(String response);
 
     /**
-     * ÁªÍø½ø¶ÈµÄÕ¹Ê¾
+     * è”ç½‘è¿›åº¦çš„å±•ç¤º
      * @param progress
      */
     public void inProgress(float progress) {
     }
 }
-
-
