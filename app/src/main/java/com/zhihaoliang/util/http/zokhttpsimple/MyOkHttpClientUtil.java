@@ -26,22 +26,35 @@ public class MyOkHttpClientUtil extends OkHttpClientUtil {
         return sInstance;
     }
 
-
+    /**
+     * 是否是debug模式，debug模式不进行联网直接返回成功
+     * @return
+     */
     @Override
     public boolean isDebug() {
         return false;
     }
 
+    /**
+     * 当可以联网但是服务器没返回的错误
+     * 返回值暂时没有用到
+     */
     @Override
     public boolean onDeError() {
         return false;
     }
 
+    /**
+     * 对url的处理，比如加上服务器地址
+     */
     @Override
     public String getUrl(String url) {
         return url;
     }
 
+    /**
+     *对返回值的打印
+     */
     @Override
     public void doLog(String response) {
         Log.e("==",response);
