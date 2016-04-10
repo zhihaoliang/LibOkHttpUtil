@@ -2,10 +2,10 @@
 
 <pre><code>
 /**
- * Get 请求
- * @param url          请求的地址
- * @param httpCallBack 请求的结果的处理
- * @param context 建议用ApplicationContext
+ \* Get 请求
+ \* @param url          请求的地址
+ \* @param httpCallBack 请求的结果的处理
+ \* @param context 建议用ApplicationContext
  */
 public void httpGet(Context context,String url, HttpCallBack httpCallBack) 
 
