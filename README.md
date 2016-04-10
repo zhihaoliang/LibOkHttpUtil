@@ -37,11 +37,11 @@ public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, 
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Map<String, String> params)
 
 /**
- * 文件上传 请求
- * @param url          请求的地址
- * @param httpCallBack 请求的结果的处理
- * @param files    要上传的的文件路径列表
- * @param context 建议用ApplicationContext
+\*文件上传 请求
+\*@param url          请求的地址
+\*@param httpCallBack 请求的结果的处理
+\*@param files    要上传的的文件路径列表
+\*@param context 建议用ApplicationContext
  */
 public void uploadFile(Context context,String url, HttpCallBack httpCallBack,  Map<String, String> params,File...files )
 
@@ -81,7 +81,7 @@ import android.util.Log;
 import com.zhihaoliang.util.http.OkHttpClientUtil;
 
 /**
- * Created by Administrator on 2016/4/7 0007.
+\*Created by Administrator on 2016/4/7 0007.
  */
 public class MyOkHttpClientUtil extends OkHttpClientUtil {
 
@@ -103,8 +103,8 @@ return sInstance;
 }
 
 /**
-* 是否是debug模式，debug模式不进行联网直接返回成功
-* @return
+\* 是否是debug模式，debug模式不进行联网直接返回成功
+\* @return
 */
 @Override
 public boolean isDebug() {
@@ -112,8 +112,8 @@ return false;
 }
 
 /**
-* 当可以联网但是服务器没返回的错误
-* 返回值暂时没有用到
+\* 当可以联网但是服务器没返回的错误
+\* 返回值暂时没有用到
 */
 @Override
 public boolean onDeError() {
@@ -121,7 +121,7 @@ return false;
 }
 
 /**
-* 对url的处理，比如加上服务器地址
+\* 对url的处理，比如加上服务器地址
 */
 @Override
 public String getUrl(String url) {
@@ -129,7 +129,7 @@ return url;
 }
 
 /**
-*对返回值的打印
+\*对返回值的打印
 */
 @Override
 public void doLog(String response) {
@@ -148,49 +148,49 @@ import okhttp3.Call;
 import okhttp3.Request;
 
 /**
- * Created by Intellij IDEA
- * User:haoliangzhi
- * DATA:2016/3/11
- * TIME:23:48
+\*Created by Intellij IDEA
+\*User:haoliangzhi
+\*DATA:2016/3/11
+\*TIME:23:48
  */
 public abstract class HttpCallBack {
     /**
-     * 如果不符合联网条件
+    \*如果不符合联网条件
      */
     public abstract void onConnnectFaile(int state);
     /**
-     * 符合联网条件
+    \*符合联网条件
      */
     public abstract void onConnnectSucess();
 
     /**
-     * 联网之前的UI操作
+    \*联网之前的UI操作
      */
     public void onBefore(Request request) {
     }
 
     /**
-     * 联网之后的操作
+    \*联网之后的操作
      */
     public void onAfter() {
     }
 
     /**
-     * 联网错误的操作
-     * @param call
-     * @param e
+    \*联网错误的操作
+    \*@param call
+    \*@param e
      */
     public abstract void onError(Call call, Exception e);
 
     /**
-     * 联网成功的操作
-     * @param response
+    \*联网成功的操作
+    \*@param response
      */
     public abstract void onResponse(String response);
 
     /**
-     * 联网进度的展示
-     * @param progress
+    \*联网进度的展示
+    \*@param progress
      */
     public void inProgress(float progress) {
     }
