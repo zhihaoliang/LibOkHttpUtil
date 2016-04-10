@@ -10,20 +10,20 @@
 public void httpGet(Context context,String url, HttpCallBack httpCallBack) 
 
 /** Post Json 请求
- /* @param url          请求的地址
- /* @param httpCallBack 请求的结果的处理
- /* @param object       传递的Bean类
- /* @param context 建议用ApplicationContext
- /*/
+ \* @param url          请求的地址
+ \* @param httpCallBack 请求的结果的处理
+ * @param object       传递的Bean类
+ * @param context 建议用ApplicationContext
+ */
 public void httpPostJson(Context context,String url, HttpCallBack httpCallBack, Object object)
 
 /**
-/* Post Form表单 请求
-/* @param url          请求的地址
-/* @param httpCallBack 请求的结果的处理
-/* @param object       传递的Bean类
-/* @param context 建议用ApplicationContext
-/*/
+ * Post Form表单 请求
+ * @param url          请求的地址
+ * @param httpCallBack 请求的结果的处理
+ * @param object       传递的Bean类
+ * @param context 建议用ApplicationContext
+ */
 public void httpPostForm(Context context,String url, HttpCallBack httpCallBack, Object object)
 
 /**
