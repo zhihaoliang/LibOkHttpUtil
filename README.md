@@ -9,9 +9,10 @@
  */
 public void httpGet(Context context,String url, HttpCallBack httpCallBack) 
 
-/** Post Json 请求
- \* @param url          请求的地址
- \* @param httpCallBack 请求的结果的处理
+/**
+ * Post Json 请求
+ * @param url          请求的地址
+ * @param httpCallBack 请求的结果的处理
  * @param object       传递的Bean类
  * @param context 建议用ApplicationContext
  */
